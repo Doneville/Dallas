@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dallas Mavericks Schedule</title>
+    <link rel="stylesheet" href="schedule.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Upcoming Mavericks Games</h1>
+    </header>
+
+
+    <div class="back-button-container">
+        <button class="back-button" onclick="goHome()">Back to Homepage</button>
+    </div>
+
+    <main>
+        <div class="schedule-container">
+            <div class="game" id="game1">
+                <h2>Opponent: Los Angeles Lakers</h2>
+                <p>Date: January 10, 2025</p>
+                <p>Time: 7:00 PM CST</p>
+                <p>Venue: American Airlines Center</p>
+            </div>
+            <div class="game" id="game2">
+                <h2>Opponent: Golden State Warriors</h2>
+                <p>Date: January 13, 2025</p>
+                <p>Time: 8:30 PM CST</p>
+                <p>Venue: Chase Center</p>
+            </div>
+            <div class="game" id="game3">
+                <h2>Opponent: Phoenix Suns</h2>
+                <p>Date: January 16, 2025</p>
+                <p>Time: 6:00 PM CST</p>
+                <p>Venue: American Airlines Center</p>
+            </div>
+            <div class="game" id="game4">
+                <h2>Opponent: Denver Nuggets</h2>
+                <p>Date: January 18, 2025</p>
+                <p>Time: 7:30 PM CST</p>
+                <p>Venue: Ball Arena</p>
+            </div>
+            <div class="game" id="game5">
+                <h2>Opponent: Miami Heat</h2>
+                <p>Date: January 20, 2025</p>
+                <p>Time: 8:00 PM CST</p>
+                <p>Venue: Kaseya Center</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Dallas Mavericks Fan Page. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function goHome() {
+            window.location.href = "oefen.html";
+        }
+
+        const games = document.querySelectorAll('.game');
+        games.forEach((game, index) => {
+            game.style.animationDelay = `${index * 0.3}s`;
+        });
+    </script>
+</body>
+</html>

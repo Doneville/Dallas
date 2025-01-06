@@ -1,0 +1,111 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background: linear-gradient(180deg, #00538c, #00285e);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.header {
+    background-color: #00285e;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.back-button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back-button {
+    background-color: #007dc5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #005a99;
+    transform: scale(1.05);
+}
+
+
+.schedule-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.game {
+    background-color: rgba(0, 83, 140, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideIn 0.5s ease-out forwards;
+}
+
+.game h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffcc00;
+}
+
+.game p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: white;
+}
+
+
+.footer {
+    background-color: #00285e;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin-top: auto;
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

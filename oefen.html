@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dallas Mavericks</title>
+    <link rel="stylesheet" href="oefen.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Dallas Mavericks</h1>
+    </header>
+
+    <main>
+        <div class="background-image">
+            <div class="overlay">
+                <h2>Welcome to the Dallas Mavericks Fan Page</h2>
+                <p>Explore the latest updates, schedules, stats, and the rich history of the Dallas Mavericks.</p>
+                <div class="button-container">
+                    <button onclick="goTeam()">Team</button>
+                    <button onclick="goSchedule()">Schedule</button>
+                    <button onclick="goStats()">Stats</button>
+                    <button onclick="goHistory()">History</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Dallas Mavericks Fan Page. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function goTeam() {
+            window.location.href = "team.html";
+        }
+
+        function goSchedule() {
+            window.location.href = "schedule.html";
+        }
+
+        function goStats() {
+            window.location.href = "stats.html";
+        }
+
+        function goHistory() {
+            window.location.href = "history.html";
+        }
+    </script>
+</body>
+</html>

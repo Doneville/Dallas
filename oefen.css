@@ -1,0 +1,74 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+.header {
+    background-color: #00285e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.background-image {
+    background-image: url('https://images.axios.com/MNnc_6OEfud8S7WG9uvLnsspcVQ=/0x61:2425x1425/1920x1080/2024/04/09/1712697813705.jpg?w=1920');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.button-container button {
+    background-color: #007dc5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #005a99;
+}
+
+
+.footer {
+    text-align: center;
+    background-color: #00285e;
+    color: white;
+    padding: 15px 0;
+    margin-top: 20px;
+}
