@@ -4,4 +4,4 @@ Ik maak een website over de Dallas Mavericks. Dit project laat je de teamopstell
 Hoe installeer en start je het project?
 Download het project:
 
-Gebruik Git om het project te klonen:git clone https://github.com/Doneville/dallas.git
+Gebruik Git om het project te klonen:git clone https://github.com/Doneville/Dallas
